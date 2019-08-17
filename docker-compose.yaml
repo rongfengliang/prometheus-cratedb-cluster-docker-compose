@@ -1,0 +1,53 @@
+version: "3"
+services:
+  grafana:
+    image: grafana/grafana
+    ports:
+    - "3000:3000"
+  prometheus:
+    image: prom/prometheus
+    volumes:
+    - "./prometheus.yml:/etc/prometheus/prometheus.yml"
+    ports:
+    - "9090:9090" 
+  cratedb-adapter:
+    image: crate/crate_adapter
+    command: -config.file /opt/config/config.yml
+    ports: 
+    - "9268:9268"
+    volumes: 
+    - "./cratedb-adapter:/opt/config"
+  grok:
+    image: dalongrong/grok-exporter
+    volumes: 
+    - "./grok/example:/opt/example"
+    - "./grok/grok.yaml:/grok/config.yml"
+    ports: 
+    - "9144:9144"
+  crate1:
+    image: crate
+    volumes:
+    - "./cratedb/data1:/data"
+    - "./cratedb/1.yaml:/crate/config/crate.yml"
+    ports:
+    - "4200:4200"
+    - "4300:4300"
+    - "5432:5432"
+  crate2:
+    image: crate
+    volumes:
+    - "./cratedb/data2:/data"
+    - "./cratedb/2.yaml:/crate/config/crate.yml"
+    ports:
+    - "4201:4200"
+    - "4301:4300"
+    - "5433:5432"
+  crate3:
+    image: crate
+    volumes:
+    - "./cratedb/data3:/data"
+    - "./cratedb/3.yaml:/crate/config/crate.yml"
+    ports:
+    - "4202:4200"
+    - "4302:4300"
+    - "5434:5432"
