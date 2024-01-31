@@ -1,0 +1,73 @@
+repo_name: rongfengliang/prometheus-cratedb-cluster-docker-compose
+report_id: e88c96ae681d3e6fec9107b0b8abaff3
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-31T08:02:02+00:00'
+requested_by: rongfengliang
+provider: github
+branch: master
+detected_tools_count: 5
+tools:
+- name: SQL
+  description: It is a domain-specific language used in programming
+  website_url: https://en.wikipedia.org/wiki/SQL
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/rongfengliang/prometheus-cratedb-cluster-docker-compose/blob/master/cratedb-adapter/schema.sql
+  detection_source: cratedb-adapter/schema.sql
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-08-17 16:18:17.000000000 Z
+- name: DB
+  description: 'Version control for databases: save, restore, and archive snapshots
+    of your database from the command line'
+  website_url: https://github.com/infostreams/db
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/11593/no-img.png
+  detection_source_url: https://github.com/rongfengliang/prometheus-cratedb-cluster-docker-compose/blob/master/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-08-17 16:18:17.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/rongfengliang/prometheus-cratedb-cluster-docker-compose
+  detection_source: Repo Metadata
+- name: Grafana
+  description: Open source Graphite &amp; InfluxDB Dashboard and Graph Editor
+  website_url: http://grafana.org/
+  license: AGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Monitoring Tools
+  image_url: https://img.stackshare.io/service/2645/default_8f9d552b144493679449b16c79647da5787e808b.jpg
+  detection_source_url: https://github.com/rongfengliang/prometheus-cratedb-cluster-docker-compose/blob/master/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-08-17 16:18:17.000000000 Z
+- name: Prometheus
+  description: An open-source service monitoring system and time series database,
+    developed by SoundCloud
+  website_url: http://prometheus.io/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Monitoring Tools
+  image_url: https://img.stackshare.io/service/2501/default_3cf1b307194b26782be5cb209d30360580ae5b3c.png
+  detection_source_url: https://github.com/rongfengliang/prometheus-cratedb-cluster-docker-compose/blob/master/docker-compose.yaml
+  detection_source: docker-compose.yaml
+  last_updated_by: rongfengliang
+  last_updated_on: 2019-08-17 16:18:17.000000000 Z
